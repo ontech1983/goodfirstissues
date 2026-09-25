@@ -151,21 +151,15 @@ function createListGroupItemForIssue(issue) {
     });
 
     // Go to issue button
-    let go_to_issue_btn_col = document.createElement("div");
-    go_to_issue_btn_col.setAttribute("class",
-        "col-3 d-flex justify-content-end");
+// Go to issue button
+let go_to_issue_btn = document.createElement("a");
+go_to_issue_btn.setAttribute("href", issue_url);
+go_to_issue_btn.setAttribute("target", "_blank");
 
-    let go_to_issue_btn_div = document.createElement("div");
-    go_to_issue_btn_div.setAttribute("class", "d-flex align-items-center");
 
-    let go_to_issue_btn = document.createElement("a");
-    go_to_issue_btn.setAttribute("href", issue_url);
-    go_to_issue_btn.setAttribute("target", "_blank");
-    go_to_issue_btn.setAttribute("type", "button");
-    go_to_issue_btn.setAttribute("id", "goToIssue");
-    go_to_issue_btn.setAttribute("style", "margin-right: 10px;");
-    go_to_issue_btn.setAttribute("class", "btn btn-light btn-sm active");
-    go_to_issue_btn.setAttribute("role", "link");
+go_to_issue_btn.setAttribute("style", "margin-right: 10px;");
+go_to_issue_btn.setAttribute("class", "btn btn-light btn-sm active goToIssue");
+go_to_issue_btn.setAttribute("role", "link");
 
     // Go to issue button text
     let go_to_issue_textnode = document.createElement("span");
