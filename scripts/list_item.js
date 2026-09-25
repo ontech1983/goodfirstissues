@@ -162,7 +162,7 @@ function createListGroupItemForIssue(issue) {
     go_to_issue_btn.setAttribute("href", issue_url);
     go_to_issue_btn.setAttribute("target", "_blank");
     go_to_issue_btn.setAttribute("type", "button");
-    go_to_issue_btn.setAttribute("id", "goToIssue");
+    o_to_issue_btn.setAttribute("class", "btn btn-light btn-sm active goToIssue");
     go_to_issue_btn.setAttribute("style", "margin-right: 10px;");
     go_to_issue_btn.setAttribute("class", "btn btn-light btn-sm active");
     go_to_issue_btn.setAttribute("role", "link");
